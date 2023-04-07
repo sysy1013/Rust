@@ -23,3 +23,13 @@
     <h3>Casting</h3>
     <p>i8과 i16은 더하기가 안된다. 이럴때 Casting이필요</p>
     <p>third_number = my_number + second_number as u 16 ->이런식으로 as를 사용하여서 캐스팅을 해준다면 더하기가 가능하다.</p>
+
+<h2>4. Chars</h2>
+    <p>Rust에서 .len()이라는것은 글자수를 나타내는것이 아니라 크기 즉 bytes를 나타낸다.</p>
+    <p>숫자 뒤에는 그냥 바로 적어도됨.</p>
+    <p>Example -> let my_number = 9u8;</p>
+    <p>Example -> let my_number = 1_000_000u64;
+    이런식으로 아래 _있더라도 무시하고 u64로 인식</p>
+<h2>5. float</h2>
+    <p>let my_number = 9. ->뒤에 작성하지 않아도 float으로 인식한다.</p>
+    <p>f32 / f64 -> 대부분 f64로 사용한다.</p>

@@ -16,19 +16,33 @@
 
 //mutability라는것은 가변이 가능하다 라는것.
 fn main() {
-    let my_value = 10;
-    let my_value = "My value";
-    println!("My value is {my_value}");
+    //더 많은 Format은 docs
+    let my_value = &9;
+    println!("{:p}", my_value);
+    //지금은 주소값이 나오지만 {:?} 안에 x넣으면 헥사 b넣으면 bytes
+    //위에는 Debug print -> println!("{:?}") 이런식 사용
+    println!(
+        "let me tell you
+어떤 이야기를
+봅시다"
+    );
+    print!("hihi");
+    println!("hihi");
+    //print! 하면 쭉 이어서 쓰기, println!면 한줄 밀어서 쓰기
 
-    let my_variable = 9;
-    print!("{}\n", my_variable);
-    {
-        let my_variable = "Some String";
+    /*let my_value = 10;
+        let my_value = "My value";
+        println!("My value is {my_value}");
+
+        let my_variable = 9;
+        print!("{}\n", my_variable);
+        {
+            let my_variable = "Some String";
+            println!("{}", my_variable);
+        }
         println!("{}", my_variable);
-    }
-    println!("{}", my_variable);
-    //Shadowing 이라는것은 이름을 다시 쓰는것. 즉 이전것을 날려버리는게 아니라 임시적으로 block 해놓고 다시 쓰는것
-
+        //Shadowing 이라는것은 이름을 다시 쓰는것. 즉 이전것을 날려버리는게 아니라 임시적으로 block 해놓고 다시 쓰는것
+    */
     /*let mut my_number = 10;
     my_number = 9;
     */
